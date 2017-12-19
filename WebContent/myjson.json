@@ -1,0 +1,52 @@
+[
+{
+   "ModelId": "001",
+   "DeviceName": "Samsung Galaxy S1",
+   "Type": "Device"
+},
+{
+    "ModelId": "002",
+    "DeviceName": "Samsung Galaxy S2",
+    "Type": "Device"
+},
+{
+    "ModelId": "003",
+    "DeviceName": "Nokia Handset",
+    "Type": "Accessory"
+},
+{
+    "ModelId": "004",
+    "DeviceName": "USB Cable",
+    "Type": "Accessory"
+},
+{
+    "ModelId": "005",
+    "DeviceName": "Samsung Galaxy S3",
+    "Type": "Device"
+},
+{
+    "ModelId": "006",
+    "DeviceName": "Portable Charger",
+    "Type": "Accessory"
+},
+{
+    "ModelId": "007",
+    "DeviceName": "Keyboard",
+    "Type": "Accessory"
+},
+{
+    "ModelId": "008",
+    "DeviceName": "Samsung Galaxy Note 1",
+    "Type": "Device"
+},
+{
+    "ModelId": "009",
+    "DeviceName": "Nokia N8",
+    "Type": "Device"
+},
+{
+    "ModelId": "010",
+    "DeviceName": "Samsung Galaxy Note 2",
+    "Type": "Device"
+}
+]

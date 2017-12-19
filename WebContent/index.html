@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    
+<script>
+  var app = angular.module('myApp', []);
+	app.controller('myController',
+	function ($scope, $http) {
+
+		var request = {
+			method: 'get',
+			url: 'myjson.json',
+			dataType: 'json',
+			contentType: "application/json"
+		};
+
+		$scope.jsonResponse = new Array;
+		$http(request).success(function (jsonData) {
+				$scope.jsonResponse = jsonData;
+				$scope.myData = $scope.jsonResponse;
+		}).error(function () {
+			console.log("Error");
+		});
+	});	
+</script>
+
+<style>
+	table, th, td {
+		border:solid 1px #DDD;
+		padding:3px;
+		font:14px Verdana;
+		text-align:center;
+	}
+	th {font-weight:bold;}
+</style>
+
+
+<body>
+
+<div ng-app="myApp" ng-controller="myController">
+  <table>
+		<tr>
+			<th>Model Id</th>
+			<th>Device Name</th>
+			<th>Type</th>
+		</tr>
+
+		<tr ng-repeat="d in myData">
+			<td>{{d.ModelId}}</td>
+			<td>{{d.DeviceName}}</td>
+			<td>{{d.Type}}</td>
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>
